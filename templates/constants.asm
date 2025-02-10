@@ -1,3 +1,52 @@
+test rbp,59
+shl ecx,2
+call [ebp]
+sar cl,3
+shr bx,2
+rcl rdx,2
+jmp [eax]
+adc bx,92
+jmp [edi]
+sti
+imul cl
+div edx
+add bh,dh
+jmp [edi]
+rcl ecx,8
+jmp [eax]
+or cl,12
+scasw
+test [rbx],rbp
+cli
+jmp [eax]
+and bx,bx
+sbb [ebp],edi
+sbb al,bl
+idiv esi
+lahf
+sar dh,7
+cld
+add ch,ch
+dec esi
+call [esi]
+inc cx
+scasw
+call [esi]
+idiv ah
+div dx
+inc ebx
+inc al
+mov [rax],rbp
+sal edi,5
+adc ebx,57
+test cx,75
+jmp [esi]
+sar ebp,4
+shl cl,4
+mul ebx
+call [eax]
+dec rsi
+
 sbb rsi,76
 rcr ch,8
 ret
