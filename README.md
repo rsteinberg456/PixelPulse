@@ -1,0 +1,2 @@
+# PixelPulse
+GIF animations creator.
