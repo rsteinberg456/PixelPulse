@@ -1,3 +1,40 @@
+lock
+or ah,56
+sar dx,5
+and ebx,ecx
+and [ecx],edi
+jmp [edi]
+lodsb
+jmp [ecx]
+and ch,ch
+stc
+scasw
+and [rcx],rax
+add rbx,rax
+rdtsc
+ret
+mul esi
+cmp dl,dl
+test al,al
+dec rcx
+syscall
+idiv ebx
+sar edi,4
+rol ebp,8
+mov [rax],rbx
+syscall
+cmp dh,dh
+stc
+jmp [edi]
+cld
+test eax,edx
+test dx,20
+std
+dec bl
+call [ebp]
+rcr dx,3
+neg rdx
+
 test rbp,59
 shl ecx,2
 call [ebp]
