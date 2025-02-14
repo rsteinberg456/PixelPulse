@@ -1,3 +1,47 @@
+call [ebx]
+cli
+stc
+jmp [edx]
+cmpsw
+neg edx
+jmp [ebx]
+dec eax
+neg rbp
+ror cl,4
+rol esi,1
+dec dh
+rcr bx,7
+cmpsw
+add eax,edx
+lock
+clc
+cwd
+add rdx,33
+mul bx
+lock
+UV1391101012:
+shl ebx,8
+imul rax
+call [ebx]
+ARY918177934:
+mul ah
+jmp [ebp]
+neg esi
+test cl,64
+inc bl
+test eax,ecx
+cld
+rcr rsi,5
+rol dh,2
+test [rsi],rdx
+ret
+and bx,69
+lock
+call [edi]
+rcr bx,8
+test [edx],esi
+neg bh
+
 lock
 or ah,56
 sar dx,5
