@@ -1,3 +1,49 @@
+adc dh,dh
+lodsw
+xor dx,dx
+rcl rdi,5
+scasw
+inc dl
+test dh,58
+rcl ax,8
+cli
+neg dh
+clc
+mov [rax],rbx
+mul ebp
+test ch,ch
+std
+sub rbp,rcx
+scasw
+xor eax,18
+call [edi]
+shl ebp,8
+test ebx,edi
+idiv bl
+oaKZY986674925:
+cld
+rcl cl,5
+neg bl
+std
+test ah,97
+scasw
+sal ax,6
+pause
+.yVV1H428065657:
+neg cx
+sbb dx,dx
+call [edx]
+pause
+hlt
+sub cx,74
+idiv ecx
+jmp [esi]
+or ebx,9
+shr ax,5
+sbb bx,bx
+neg dx
+xor edi,ebx
+
 call [ebx]
 cli
 stc
