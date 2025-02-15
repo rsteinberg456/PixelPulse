@@ -1,3 +1,30 @@
+ret
+cld
+inc edx
+lock
+and ecx,57
+jmp [edi]
+imul ax
+and [edx],edx
+and [rsi],rsi
+wait
+cld
+pause
+rcl cl,8
+rol bx,3
+and edi,48
+sub dh,67
+div esi
+rcr dl,4
+call [esi]
+add [ebx],ebx
+sub dx,cx
+rcr cl,5
+shl bl,6
+cwd
+cmp dh,dh
+rol ch,4
+
 dec bh
 nop
 rcl ch,5
