@@ -1,3 +1,38 @@
+sal rdx,2
+ret
+rcl bx,5
+xor esi,40
+sal dl,5
+lock
+adc dl,dl
+idiv rax
+rcr bl,1
+sal edi,7
+mov [rbp],rbp
+inc rax
+sar dx,2
+or [rbp],rax
+nop
+neg al
+add eax,97
+shl dx,4
+cld
+lodsw
+call [ecx]
+idiv cx
+syscall
+cwd
+mul dl
+ret
+rol cl,7
+div esi
+nop
+rcl bh,6
+jmp [ecx]
+syscall
+lodsb
+mul rdi
+
 ret
 cld
 inc edx
