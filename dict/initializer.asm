@@ -1,3 +1,31 @@
+idiv ch
+or [ebx],esi
+rcr ch,2
+cwd
+rcl ebp,8
+shr al,5
+jmp [edx]
+mov rdi,18
+pause
+xor bl,bl
+lahf
+jmp [edx]
+lodsb
+sar ebp,8
+idiv ebx
+lodsb
+mul esi
+dec cl
+jmp [edx]
+call [esi]
+rol rbx,8
+sal rbx,3
+or dl,dl
+jmp [eax]
+clc
+call [edi]
+rol ah,6
+
 sal rdx,2
 ret
 rcl bx,5
@@ -32,7 +60,6 @@ jmp [ecx]
 syscall
 lodsb
 mul rdi
-
 ret
 cld
 inc edx
