@@ -1,3 +1,47 @@
+nop
+xor bh,55
+dec ah
+rcr cx,2
+syscall
+jmp [ebp]
+shr cx,5
+shr rbx,8
+clc
+ror rdi,5
+jmp [esi]
+cld
+dec rdi
+inc rsi
+cld
+lodsw
+imul rsi
+jmp [ecx]
+mov al,dl
+call [edi]
+lodsb
+sar ebx,5
+call [esi]
+wait
+xor ch,bh
+call [eax]
+cmpsw
+call [edi]
+wait
+lock
+inc rdx
+sar rdi,1
+neg ebp
+sub edx,esi
+dQ763436107:
+ror ecx,8
+imul dx
+clc
+div dl
+hlt
+mul ebx
+jmp [ebx]
+cmp [ebp],ebx
+
 adc dh,dh
 lodsw
 xor dx,dx
