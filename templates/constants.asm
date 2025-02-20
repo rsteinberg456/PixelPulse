@@ -1,3 +1,46 @@
+mov dh,29
+clc
+cld
+scasw
+rdtsc
+cmp [rcx],rdx
+call [edx]
+shr esi,5
+std
+sub dh,dh
+sub [ebx],edi
+adc dh,dh
+syscall
+sti
+shl bl,4
+imul edi
+rcr cl,5
+div rbx
+ror ebx,1
+rol ebx,2
+div bl
+sti
+sal al,1
+call [edi]
+.w96903003:
+cmp rax,98
+cmpsw
+shr bh,4
+jmp [ebx]
+clc
+sbb rcx,rcx
+cmp dl,dl
+dec rax
+sar bh,4
+sar edi,5
+call [edx]
+jmp [eax]
+ret
+shl edi,3
+cmpsw
+mov ah,6
+mov dl,dl
+
 nop
 xor bh,55
 dec ah
