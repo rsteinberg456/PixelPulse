@@ -1,3 +1,51 @@
+scasw
+rcr bx,3
+dec rsi
+and ax,66
+div ax
+scasb
+CTdN_me635257299:
+pause
+or cl,cl
+scasw
+dec ebx
+or ax,ax
+cmp [rdi],rdx
+inc al
+ret
+call [edi]
+shr ecx,5
+sbb rbp,10
+cmp cl,bl
+sbb dh,70
+mov eax,esi
+shl dh,7
+test cx,cx
+.Wd8eS767345687:
+idiv rbx
+wait
+cli
+lock
+ret
+clc
+jmp [ecx]
+jmp [edx]
+ret
+cmp ebp,ebp
+mov rdi,67
+sub dx,2
+clc
+jmp [edi]
+jmp [ebx]
+xor al,84
+lodsw
+rcr dl,7
+jmp [esi]
+rcr bh,7
+sar dh,6
+ror edx,7
+sar ebp,3
+
 idiv ch
 or [ebx],esi
 rcr ch,2
@@ -136,7 +184,6 @@ sbb al,78
 call [eax]
 ror ch,7
 or [ecx],ebx
-
 HlX3nBeHH873374235:
 imul dh
 dec rbp
