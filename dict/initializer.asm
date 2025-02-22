@@ -1,3 +1,42 @@
+sbb [rdx],rdi
+adc rdi,65
+std
+neg rcx
+lodsw
+sti
+ret
+jmp [esi]
+nop
+neg bl
+imul ch
+sub rcx,rax
+scasb
+mul edi
+cld
+WWCe3KK9rz141659582:
+neg rbx
+inc ebx
+cwd
+call [ebp]
+jmp [esi]
+cli
+clc
+wait
+cli
+wait
+lodsw
+test bx,dx
+shr rdi,5
+sar edi,5
+xor dl,dl
+adc al,al
+syscall
+shr rax,3
+imul ax
+sal eax,4
+div bl
+sbb ebp,37
+
 scasw
 rcr bx,3
 dec rsi
