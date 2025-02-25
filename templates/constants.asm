@@ -1,3 +1,36 @@
+xor [esi],esi
+ror bx,2
+sbb ah,ah
+sbb eax,94
+ret
+xor dl,cl
+clc
+stc
+rcl rbx,4
+inc rax
+ret
+ror edi,6
+hlt
+shl edi,4
+call [edi]
+lodsb
+rcl ch,3
+imul rbx
+std
+mul esi
+ret
+imul rdi
+jmp [edx]
+mov ch,20
+jmp [esi]
+std
+div ah
+sbb bx,26
+inc ch
+cmp cx,38
+adc ah,ah
+call [edi]
+
 mov dh,29
 clc
 cld
@@ -130,7 +163,6 @@ shr ax,5
 sbb bx,bx
 neg dx
 xor edi,ebx
-
 call [ebx]
 cli
 stc
