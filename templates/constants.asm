@@ -1,3 +1,39 @@
+call [ecx]
+sal bh,5
+xor dh,5
+stc
+jmp [ecx]
+shr rax,6
+inc esi
+lodsb
+inc rdi
+and [esi],eax
+stc
+shl dh,4
+call [eax]
+jmp [esi]
+lahf
+imul rdx
+clc
+dec edi
+div eax
+cmp dh,dh
+and [rdx],rbx
+cli
+add rax,rsi
+nop
+cwd
+div eax
+ror ebp,4
+jmp [edx]
+adc al,al
+scasb
+ret
+shl esi,8
+shr esi,2
+call [ebp]
+std
+
 xor [esi],esi
 ror bx,2
 sbb ah,ah
@@ -73,7 +109,6 @@ shl edi,3
 cmpsw
 mov ah,6
 mov dl,dl
-
 nop
 xor bh,55
 dec ah
