@@ -1,3 +1,41 @@
+cli
+xor bl,bl
+ret
+cld
+jmp [ebp]
+imul ch
+test ch,74
+mov bx,44
+ror edi,2
+hlt
+sub cl,cl
+call [edx]
+rdtsc
+rol dh,6
+std
+ror cx,2
+wait
+neg edi
+sar cl,5
+mul ecx
+sbb ecx,edx
+mov [edi],esi
+lahf
+pause
+lodsb
+div rdi
+neg ebp
+adc ch,dh
+.W325725878:
+dec eax
+xor al,61
+mul rdi
+call [ebp]
+jmp [edx]
+lock
+rcl rcx,3
+sbb esi,20
+
 call [ecx]
 sal bh,5
 xor dh,5
@@ -278,7 +316,6 @@ dec bl
 call [ebp]
 rcr dx,3
 neg rdx
-
 test rbp,59
 shl ecx,2
 call [ebp]
