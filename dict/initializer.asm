@@ -1,3 +1,54 @@
+sub [ebx],ebx
+add dl,dl
+call [eax]
+jmp [edx]
+adc rax,rsi
+jmp [ebx]
+mul dx
+call [edx]
+pause
+pause
+neg ah
+rcr rcx,6
+cli
+sal ch,5
+adc al,al
+adc [rdx],rax
+lahf
+inc eax
+lodsw
+mov dl,dl
+lock
+ret
+idiv bl
+lodsw
+rol dl,3
+dec esi
+cld
+wait
+pause
+rcl dh,1
+call [eax]
+sbb eax,1
+lodsb
+ror dl,8
+sub dh,dh
+call [ecx]
+imul esi
+shr al,8
+ror ch,1
+jmp [esi]
+.m8313686714:
+neg dh
+test cx,70
+ret
+mov [edx],eax
+ret
+sbb bx,26
+shr esi,8
+adc edx,edx
+clc
+
 sbb [rdx],rdi
 adc rdi,65
 std
