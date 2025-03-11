@@ -1,3 +1,41 @@
+rcl ch,6
+sti
+call [eax]
+idiv ah
+lock
+cmp [esi],ecx
+imul dx
+div ax
+call [ebp]
+idiv cl
+stc
+or ah,ah
+dec rdx
+scasb
+cli
+lodsw
+shr ch,2
+stc
+scasw
+mov dx,bx
+add [edi],edi
+cmp ax,63
+and ax,ax
+sal ebx,7
+rcl cx,1
+ret
+jmp [ebp]
+syscall
+jmp [edi]
+call [edx]
+rcr rdi,1
+xor rdi,43
+jmp [edx]
+sti
+rol ebx,5
+cmpsw
+and bl,31
+
 cli
 xor bl,bl
 ret
