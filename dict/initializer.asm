@@ -1,3 +1,50 @@
+add cx,90
+ret
+xor bl,19
+nop
+call [ecx]
+pause
+jmp [eax]
+adc edi,ebp
+call [ebp]
+rcl bl,8
+jmp [ecx]
+idiv cx
+cli
+rcr ah,8
+cwd
+ror bh,3
+or rbp,rdx
+imul esi
+cli
+pause
+stc
+lock
+div bh
+jmp [edi]
+ror dx,2
+stc
+adc rdi,37
+scasw
+jmp [esi]
+sbb eax,ecx
+and ax,97
+shr edx,6
+ret
+adc [eax],ebx
+cli
+and [ecx],ecx
+call [esi]
+ret
+imul rcx
+idiv bh
+sti
+or ah,ah
+idiv edi
+rdtsc
+mov ax,17
+wait
+
 sub [ebx],ebx
 add dl,dl
 call [eax]
@@ -87,7 +134,6 @@ imul ax
 sal eax,4
 div bl
 sbb ebp,37
-
 scasw
 rcr bx,3
 dec rsi
