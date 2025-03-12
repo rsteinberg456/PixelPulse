@@ -1,3 +1,36 @@
+sbb ch,ch
+call [ebp]
+scasb
+xor [eax],ecx
+jmp [ecx]
+test [rax],rsi
+and [rbp],rsi
+shl rbx,5
+cmp ax,ax
+call [ecx]
+and rax,rax
+cmp ch,ch
+sbb dh,8
+shr rdx,8
+rcl cl,3
+yv84w450252115:
+div rsi
+jmp [ebx]
+div rdx
+idiv edi
+cwd
+shr ax,3
+inc rdx
+syscall
+cld
+sub ebx,76
+test [rbp],rsi
+rol dl,4
+rcr esi,3
+clc
+sub rsi,rbx
+sal bh,4
+
 mul ebx
 inc cl
 sar ax,5
