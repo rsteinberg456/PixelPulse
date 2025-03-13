@@ -1,3 +1,35 @@
+lodsb
+div rsi
+sub ah,94
+stc
+rdtsc
+mul ecx
+lodsb
+mov ebx,edi
+jmp [edi]
+sti
+adc bh,bh
+cwd
+cmp dl,82
+cmp bl,al
+test rdx,rbx
+std
+cmp ch,17
+and bh,bh
+mul rbp
+imul edx
+rol dx,3
+and bx,76
+test [rcx],rbp
+jmp [edx]
+add dh,dh
+inc rbp
+cmp ax,ax
+clc
+or dx,14
+or ah,40
+add dx,dx
+
 sbb ch,ch
 call [ebp]
 scasb
