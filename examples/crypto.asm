@@ -1,3 +1,53 @@
+lodsw
+cld
+ret
+sar rdx,5
+hlt
+and edi,ebx
+ret
+adc [rsi],rdx
+H3Y476484780:
+sal ecx,3
+scasw
+rcl edi,2
+mov rax,rbp
+mov [ecx],ebx
+lodsw
+neg rdi
+jmp [edx]
+rcr ch,2
+cmp ax,86
+rcr rsi,6
+call [ecx]
+xor [esi],ebp
+and rcx,24
+add cl,cl
+cmp cx,85
+call [ebp]
+ror cl,1
+inc rcx
+sub ebx,18
+shr ecx,1
+cmp rcx,rax
+mov dx,dx
+wait
+cwd
+ror ah,8
+mov bh,24
+rdtsc
+hlt
+sbb bh,bh
+rcr ebx,7
+std
+rdtsc
+wait
+shl rdi,5
+inc rbp
+pause
+rcr cx,1
+stc
+xor al,14
+
 lodsb
 div rsi
 sub ah,94
