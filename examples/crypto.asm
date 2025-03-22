@@ -1,3 +1,29 @@
+adc eax,94
+jmp [edi]
+xor bh,46
+lahf
+sbb [rdi],rax
+qU79AVei153606389:
+imul ax
+jmp [edi]
+sub ah,ah
+clc
+ror eax,3
+lahf
+rol rcx,1
+hlt
+cli
+mov dl,68
+jmp [eax]
+cmp [edi],ebp
+jmp [eax]
+rcr ax,3
+cld
+imul bx
+inc edi
+jmp [ebp]
+cli
+
 lodsw
 cld
 ret
