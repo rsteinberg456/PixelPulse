@@ -1,3 +1,41 @@
+jmp [ebx]
+std
+cwd
+scasw
+inc ah
+inc cl
+mov dx,20
+jmp [edx]
+add bl,95
+lodsw
+ret
+inc ax
+cld
+shl ah,3
+lodsb
+.ZkDZ861364887:
+rol rax,3
+jmp [esi]
+dec rbp
+mov bh,48
+lahf
+hlt
+idiv cx
+xor [rbx],rbp
+test ax,6
+dec ebp
+inc ah
+rol ch,1
+stc
+lahf
+sub ah,ah
+shr bx,7
+shr rbx,7
+sbb rax,16
+hlt
+cwd
+ret
+
 adc eax,94
 jmp [edi]
 xor bh,46
@@ -138,7 +176,6 @@ rcr esi,3
 clc
 sub rsi,rbx
 sal bh,4
-
 mul ebx
 inc cl
 sar ax,5
