@@ -1,3 +1,41 @@
+call [esi]
+ror ch,8
+rol cx,3
+lodsw
+rcl cl,4
+and cx,24
+cld
+rcl dx,4
+rdtsc
+dec dl
+mul ebp
+sal cx,4
+call [edi]
+dec rbx
+inc ax
+sti
+sub dl,49
+mov bx,99
+sbb dh,67
+call [edx]
+cmp ch,28
+sub [rax],rcx
+rol dx,3
+lodsw
+mul bh
+shr rsi,3
+jmp [eax]
+or bh,bh
+xor al,al
+add bh,66
+sbb al,dl
+lodsb
+rol bh,1
+xor [rax],rbx
+jmp [edi]
+mul esi
+cmp [edx],ebx
+
 add cx,90
 ret
 xor bl,19
@@ -44,7 +82,6 @@ idiv edi
 rdtsc
 mov ax,17
 wait
-
 sub [ebx],ebx
 add dl,dl
 call [eax]
