@@ -1,3 +1,30 @@
+std
+cmp edi,63
+call [eax]
+call [ebx]
+adc [edx],ebx
+ret
+scasb
+sub bl,58
+div dh
+cmpsw
+neg bl
+call [edi]
+call [esi]
+call [eax]
+inc rbx
+lodsw
+add dh,11
+cld
+imul rbx
+shl al,5
+xor [rbp],rdx
+inc esi
+sar bl,8
+call [edi]
+mul rbp
+sti
+
 jmp [ebx]
 std
 cwd
