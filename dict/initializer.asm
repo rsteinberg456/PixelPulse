@@ -1,3 +1,41 @@
+scasb
+test rbp,rsi
+cmp edx,ebp
+lock
+ret
+mul ah
+lodsb
+scasb
+rcr ebx,6
+rcl dh,3
+stc
+sbb cx,66
+ret
+div rsi
+ret
+jmp [ecx]
+xor [ebp],esi
+pause
+jmp [ebx]
+sbb [rbx],rbx
+rcl ebp,7
+and [ebx],ebp
+neg bh
+mov esi,6
+call [ebp]
+call [ebx]
+syscall
+shl edi,3
+call [edx]
+inc rax
+shr dx,8
+sub dx,17
+neg edi
+call [edi]
+imul esi
+xor dx,41
+inc rbx
+
 call [esi]
 ror ch,8
 rol cx,3
@@ -218,7 +256,6 @@ rcr bh,7
 sar dh,6
 ror edx,7
 sar ebp,3
-
 idiv ch
 or [ebx],esi
 rcr ch,2
