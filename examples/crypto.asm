@@ -1,3 +1,30 @@
+cmpsw
+rdtsc
+sbb dh,72
+mul edi
+nop
+test dl,65
+div rdi
+div bx
+stc
+rcr bl,4
+cli
+cmp dl,dl
+cmp cl,cl
+idiv eax
+ror cx,8
+std
+pause
+syscall
+mul ebx
+lock
+clc
+call [ecx]
+sal ax,5
+jmp [ebp]
+stc
+xor cx,dx
+
 std
 cmp edi,63
 call [eax]
@@ -170,7 +197,6 @@ clc
 or dx,14
 or ah,40
 add dx,dx
-
 sbb ch,ch
 call [ebp]
 scasb
