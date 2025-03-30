@@ -1,3 +1,48 @@
+inc rax
+sar dl,5
+sub dh,75
+div rax
+neg al
+div esi
+mov bl,bl
+call [ebx]
+pause
+xor [rsi],rax
+Z874536397:
+call [edi]
+pause
+pause
+test ah,ah
+cwd
+sti
+ret
+sal rbx,5
+test dl,dl
+sal rsi,2
+sar dl,4
+mov [ebx],edi
+rcr ebx,8
+call [edi]
+dec ebp
+ror cx,6
+cwd
+inc edi
+call [edi]
+wait
+cli
+xor dl,dl
+call [ecx]
+lodsw
+idiv eax
+xor rbp,38
+cwd
+jmp [eax]
+cli
+jmp [edx]
+rcr dh,1
+rcr rdx,1
+sbb dh,bh
+
 cmpsw
 rdtsc
 sbb dh,72
@@ -89,7 +134,6 @@ sbb rax,16
 hlt
 cwd
 ret
-
 adc eax,94
 jmp [edi]
 xor bh,46
