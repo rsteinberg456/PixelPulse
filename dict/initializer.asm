@@ -1,3 +1,40 @@
+rol dl,7
+lahf
+rol dh,7
+add bl,bl
+shl dl,8
+div rax
+rcr dl,2
+wait
+dec ebp
+jmp [esi]
+mul ecx
+cmp ax,59
+neg rbx
+cmp dl,100
+jmp [edx]
+ret
+sub bx,34
+jmp [edx]
+call [esi]
+nop
+sal ebp,1
+xor bx,80
+ret
+ror eax,8
+rcr eax,5
+sti
+cmp [edi],ecx
+test cl,cl
+clc
+xor cx,cx
+cwd
+ret
+mov cx,cx
+cmp ch,96
+clc
+lodsw
+
 scasb
 test rbp,rsi
 cmp edx,ebp
