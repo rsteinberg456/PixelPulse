@@ -1,3 +1,51 @@
+mul al
+rdtsc
+or [ebp],ebp
+and rcx,rbx
+rcl ebp,6
+rcl dx,5
+nop
+ror al,2
+neg ax
+rol rbp,8
+dec rdi
+call [ebp]
+lock
+.EkhKTQhbM294563259:
+adc ebx,86
+ret
+rcl rcx,4
+rol esi,3
+ror esi,6
+test esi,50
+jmp [esi]
+div bh
+mul esi
+pause
+mov eax,ebp
+adc dh,dh
+lodsw
+xor rdx,29
+lodsw
+cli
+call [ecx]
+cwd
+std
+sal rsi,2
+call [edx]
+rcl esi,2
+lahf
+cmp ax,ax
+div rax
+lahf
+call [ecx]
+and dh,40
+call [edi]
+ret
+imul dh
+std
+adc [ebx],eax
+
 rol dl,7
 lahf
 rol dh,7
