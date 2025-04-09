@@ -1,3 +1,39 @@
+or rsi,42
+adc ebp,edx
+cwd
+hlt
+add edi,25
+lodsb
+sbb [rbx],rcx
+scasb
+call [ebp]
+mul dx
+xor [rbx],rcx
+or esi,edi
+ret
+mul ax
+neg dl
+call [eax]
+jmp [esi]
+div rcx
+rdtsc
+pause
+adc edi,9
+cmpsw
+add cl,cl
+inc edx
+rcl dl,1
+dec bh
+dec cl
+or esi,73
+jmp [eax]
+scasb
+cld
+imul rbp
+syscall
+cli
+mul bx
+
 inc rax
 sar dl,5
 sub dh,75
