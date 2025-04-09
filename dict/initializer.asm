@@ -1,3 +1,29 @@
+lock
+scasb
+sar dl,1
+add ch,ch
+shl dh,3
+neg dx
+dec esi
+div bx
+std
+nop
+rcl dx,4
+wait
+hlt
+imul ax
+stc
+scasw
+xor [ecx],ecx
+neg rbp
+sbb [eax],edx
+lock
+stc
+cli
+scasw
+lahf
+jmp [eax]
+
 mul al
 rdtsc
 or [ebp],ebp
