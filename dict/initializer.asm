@@ -1,3 +1,53 @@
+shr al,2
+adc bh,6
+rcr cl,3
+lock
+sar ch,2
+ret
+div dx
+jmp [ecx]
+neg eax
+xor bh,73
+sub ax,8
+dec edx
+adc [esi],eax
+rol dl,5
+jmp [edx]
+.O1455040296:
+mov ch,ch
+scasb
+adc edx,esi
+sbb [rsi],rcx
+mul ecx
+sal edx,8
+add dh,dh
+jmp [esi]
+jmp [edx]
+jmp [eax]
+ror dh,2
+dec dh
+add dh,ah
+dec bx
+mul ax
+add cl,28
+call [edx]
+cli
+imul rbp
+sal rcx,5
+cmpsw
+jmp [edi]
+add edx,ecx
+shr bx,2
+inc ecx
+call [ebp]
+syscall
+mov bx,61
+clc
+ror al,2
+sbb [esi],ebp
+rol rdi,7
+imul ecx
+
 lock
 scasb
 sar dl,1
@@ -108,7 +158,6 @@ mov cx,cx
 cmp ch,96
 clc
 lodsw
-
 scasb
 test rbp,rsi
 cmp edx,ebp
