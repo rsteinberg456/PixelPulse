@@ -1,3 +1,45 @@
+rol dh,8
+neg ax
+test bl,90
+rdtsc
+lodsw
+sal rdi,4
+sbb bh,bh
+mul rdi
+test [rdx],rax
+clc
+cmpsw
+jmp [edx]
+stc
+adc dx,59
+neg ah
+clc
+lock
+sbb [eax],edi
+inc edx
+scasb
+ret
+jmp [edx]
+sbb ch,ch
+rcl cl,6
+adc dl,dl
+sbb ch,29
+scasb
+jmp [ecx]
+inc ch
+div edx
+sub [eax],edx
+rcr dl,2
+jmp [ecx]
+idiv ch
+test bh,29
+jmp [edx]
+pause
+dec rdx
+cld
+lahf
+stc
+
 or rsi,42
 adc ebp,edx
 cwd
