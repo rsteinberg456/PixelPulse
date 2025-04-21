@@ -1,3 +1,50 @@
+jmp [esi]
+imul ebp
+mov al,al
+lodsw
+imul rbx
+add dx,73
+dec edx
+scasb
+div bx
+inc bh
+sar edx,2
+lodsw
+add eax,36
+jmp [ebx]
+cmp bx,bx
+rcr esi,3
+neg rbp
+scasw
+call [edx]
+syscall
+test [rbx],rcx
+sal rdx,2
+div ebx
+add rdi,rax
+add dh,88
+jmp [edx]
+and dl,dl
+inc ecx
+add al,18
+hlt
+jmp [edi]
+clc
+sub [rdx],rsi
+cwd
+or bx,90
+test cx,82
+lock
+rcl rcx,6
+or rax,rbp
+syscall
+rcr rax,8
+rcr esi,1
+or dl,dl
+test dx,25
+shr al,4
+ror rax,8
+
 shr al,2
 adc bh,6
 rcr cl,3
@@ -195,7 +242,6 @@ call [edi]
 imul esi
 xor dx,41
 inc rbx
-
 call [esi]
 ror ch,8
 rol cx,3
