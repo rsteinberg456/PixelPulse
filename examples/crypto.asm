@@ -1,3 +1,39 @@
+mov bh,66
+shl ax,6
+call [edx]
+ror ch,5
+sar dx,7
+mul rdi
+jmp [ecx]
+scasb
+and ebx,54
+ret
+sar eax,1
+dec esi
+jmp [edx]
+wait
+cwd
+scasb
+mul rsi
+cmp cl,3
+jmp [edx]
+inc dh
+div ebp
+lock
+cmpsw
+cld
+div ecx
+and ax,13
+sal ax,6
+lodsb
+cld
+shr rdx,3
+std
+cwd
+test [ecx],eax
+rcl ebx,2
+and cx,ax
+
 rol dh,8
 neg ax
 test bl,90
