@@ -1,3 +1,50 @@
+idiv bh
+ret
+div bx
+lock
+pause
+add bx,bx
+nop
+neg rbx
+neg rbp
+cmpsw
+imul bh
+sal esi,8
+call [ebx]
+lodsb
+idiv rbx
+test bx,bx
+rcr edi,2
+rol dh,1
+xor [edi],ebp
+rcl rax,5
+rdtsc
+add ebp,37
+adc [edi],ebp
+rcr eax,5
+std
+shr edi,1
+imul dl
+scasb
+rcr rdi,5
+lodsb
+call [esi]
+rcl edi,5
+dec ch
+call [eax]
+lodsb
+jmp [edi]
+add dl,dl
+sal bh,1
+idiv bh
+sti
+scasb
+call [esi]
+mov edi,edi
+ror esi,4
+lodsb
+jmp [ebx]
+
 jmp [esi]
 imul ebp
 mov al,al
@@ -44,7 +91,6 @@ or dl,dl
 test dx,25
 shr al,4
 ror rax,8
-
 shr al,2
 adc bh,6
 rcr cl,3
@@ -376,7 +422,6 @@ sbb bx,26
 shr esi,8
 adc edx,edx
 clc
-
 sbb [rdx],rdi
 adc rdi,65
 std
