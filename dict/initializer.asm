@@ -1,3 +1,36 @@
+inc ax
+adc dh,83
+idiv ch
+xor edx,edx
+scasb
+std
+scasw
+scasw
+cwd
+rcr rdi,3
+xor bx,35
+xor edi,esi
+shl dh,4
+hlt
+rcr edx,6
+lahf
+imul rsi
+std
+dec rsi
+add dl,9
+jmp [edi]
+wait
+lodsw
+wait
+scasw
+ret
+scasw
+imul rdx
+sub al,32
+pause
+adc esi,31
+neg cx
+
 idiv bh
 ret
 div bx
