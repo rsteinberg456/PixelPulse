@@ -1,3 +1,40 @@
+scasb
+cli
+ror eax,2
+rcr edx,3
+rol esi,1
+adc ah,ah
+add rcx,rsi
+adc dh,43
+mov ah,ah
+sar al,2
+inc bl
+jmp [esi]
+and bh,dh
+shl edi,6
+sbb [ebx],eax
+imul ah
+std
+shr esi,2
+adc [ebx],eax
+and bl,1
+sbb bl,al
+rcl edi,8
+stc
+cmpsw
+mul ch
+lodsw
+stc
+imul ebp
+pause
+jmp [eax]
+and [rcx],rax
+xor rbx,rcx
+mul ch
+xor cl,cl
+imul rdx
+shr cx,6
+
 inc ax
 adc dh,83
 idiv ch
