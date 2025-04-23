@@ -1,3 +1,44 @@
+nop
+K58389637385:
+jmp [ebx]
+ror rbx,8
+std
+sal rax,7
+cli
+call [eax]
+nop
+div dh
+mov ah,59
+.zHDEl986370505:
+xor [rcx],rdx
+rcl dx,1
+lahf
+lodsw
+jmp [ebp]
+xor ch,ch
+shl rdi,2
+lodsb
+rol cx,3
+add ax,bx
+mul rdx
+scasb
+mul ebp
+mov [rsi],rdi
+mov [rdi],rbx
+and al,al
+hlt
+lock
+call [ebx]
+jmp [ebx]
+mov dl,cl
+sbb ch,54
+mul dh
+cli
+jmp [ebx]
+shr rax,8
+call [edx]
+shr rcx,6
+
 mov bh,66
 shl ax,6
 call [edx]
@@ -273,7 +314,6 @@ imul bx
 inc edi
 jmp [ebp]
 cli
-
 lodsw
 cld
 ret
