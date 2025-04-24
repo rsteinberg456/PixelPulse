@@ -1,3 +1,52 @@
+mul ebp
+xor rdi,77
+lodsw
+call [ebp]
+wait
+stc
+jmp [edx]
+jmp [esi]
+call [eax]
+lahf
+imul edx
+lodsb
+jmp [ebp]
+sal rsi,2
+cli
+wait
+or ax,ax
+cmp ax,24
+xor cx,53
+neg dh
+dec edx
+lahf
+and bh,bh
+shr cl,3
+sub [rdi],rdi
+call [edi]
+and ch,79
+xor dl,dl
+shl cl,8
+lock
+stc
+mov ch,ch
+inc bl
+sar ah,8
+jmp [esi]
+cmpsw
+add bl,bl
+rol esi,8
+jmp [eax]
+and bh,7
+add [rcx],rsi
+syscall
+mul rdi
+neg rbx
+lahf
+test [rax],rdi
+jmp [ebp]
+call [esi]
+
 nop
 K58389637385:
 jmp [ebx]
@@ -116,7 +165,6 @@ dec rdx
 cld
 lahf
 stc
-
 or rsi,42
 adc ebp,edx
 cwd
