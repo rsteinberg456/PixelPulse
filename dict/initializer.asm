@@ -1,4 +1,39 @@
 scasb
+scasb
+gHUgi318511200:
+sub bh,40
+test dx,53
+lodsw
+test cl,cl
+add rdx,64
+test cx,bx
+cmpsw
+sti
+sti
+mul bh
+idiv esi
+sar bh,3
+sar rdx,5
+nop
+idiv eax
+neg rsi
+neg dh
+and ecx,ecx
+and [rbp],rsi
+xor [eax],ebx
+idiv edi
+wait
+jmp [edx]
+wait
+jmp [edx]
+jmp [ebx]
+xor dh,63
+rcr dh,3
+rdtsc
+rdtsc
+cAO255983676:
+
+scasb
 cli
 ror eax,2
 rcr edx,3
@@ -114,7 +149,6 @@ mov edi,edi
 ror esi,4
 lodsb
 jmp [ebx]
-
 jmp [esi]
 imul ebp
 mov al,al
