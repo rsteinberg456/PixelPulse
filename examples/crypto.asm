@@ -1,3 +1,47 @@
+neg rbx
+test [rdx],rdx
+or edx,ebx
+ret
+ror rdi,7
+sar ah,7
+add ch,ch
+xor [rdx],rcx
+lodsw
+std
+idiv rdx
+cli
+inc ax
+jmp [ebp]
+call [edi]
+add dh,87
+rcr rsi,4
+ror dx,7
+wait
+scasb
+call [ebx]
+ret
+test cl,cl
+rol bl,8
+lodsb
+sal rdi,2
+div cl
+scasw
+test ah,27
+mov bl,17
+neg edi
+or ax,ax
+shl ecx,7
+neg bl
+rcl rsi,5
+sal rbx,3
+rcr ebx,6
+ror cx,5
+ret
+rol cl,4
+dec dh
+ret
+add esi,esi
+
 mul ebp
 xor rdi,77
 lodsw
@@ -87,7 +131,6 @@ jmp [ebx]
 shr rax,8
 call [edx]
 shr rcx,6
-
 mov bh,66
 shl ax,6
 call [edx]
