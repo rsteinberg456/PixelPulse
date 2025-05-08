@@ -1,3 +1,37 @@
+ror rbp,3
+cmp al,11
+nop
+and ebp,42
+cmpsw
+rol edx,3
+uAGcp7nv585345595:
+jmp [eax]
+sti
+cmp rdx,rcx
+idiv ch
+stc
+shr bx,3
+rol rcx,1
+BoHGjL876630670:
+cld
+scasw
+sal ecx,6
+call [ecx]
+cld
+rcr ecx,2
+shr edx,2
+lock
+imul ebp
+lodsw
+nop
+cmpsw
+imul cx
+div ch
+jmp [ecx]
+xor ax,ax
+neg rbx
+ret
+
 scasb
 scasb
 gHUgi318511200:
