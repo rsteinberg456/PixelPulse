@@ -1,3 +1,46 @@
+inc dx
+clc
+and bx,bx
+call [ebp]
+inc bl
+xor [edi],edi
+or ax,44
+sar ebx,7
+ret
+inc bx
+dec esi
+dec rax
+test ch,94
+.nW39vnC952367858:
+ret
+jmp [ecx]
+cmpsw
+cli
+dec ch
+rcl ecx,6
+lodsb
+pause
+sal dh,7
+mul ebp
+jmp [ebx]
+imul al
+dec cx
+sbb cx,85
+wait
+idiv al
+scasw
+div bh
+rcr rax,7
+or bx,71
+rcr rbx,8
+neg rsi
+adc [rdx],rsi
+imul rbx
+or [eax],ebx
+or rcx,36
+xor ebp,eax
+jmp [edx]
+
 ror rbp,3
 cmp al,11
 nop
